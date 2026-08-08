@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/__pycache__/
+*.pyc
+
+# Environment & Databases
+.env
+*.db
+*.sqlite
+backend/*.db
+
+# Build outputs
+frontend/dist/
+frontend/build/
+.DS_Store
