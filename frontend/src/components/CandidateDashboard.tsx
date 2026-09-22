@@ -3,7 +3,11 @@ import { useAuth } from '../context/AuthContext';
 import { uploadResumeApi } from '../services/api';
 import { UserCheck, Upload, FileText, CheckCircle2, Sparkles, Shield, Lock, Briefcase } from 'lucide-react';
 
-export const CandidateDashboard: React.FC = () => {
+interface CandidateDashboardProps {
+  onViewMatchAnalysis?: (appId: number) => void;
+}
+
+export const CandidateDashboard: React.FC<CandidateDashboardProps> = ({ onViewMatchAnalysis }) => {
   const { user, jobs } = useAuth();
   
   const [uploadType, setUploadType] = useState<'GENERAL' | 'JOB_SPECIFIC'>('GENERAL');
