@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AI Resume Screening Assistant — RAG + Skill Ontology + Explainable Ranking
 
 > *"From Resume Matching to Explainable Candidate Intelligence"*
@@ -91,6 +90,4 @@ npm run dev
 
 Open browser at `http://localhost:5173`.
 FastAPI Swagger documentation available at `http://localhost:8000/docs`.
-=======
-# Prodapt_hackathon_27
->>>>>>> d74e2f9f3b2d01632e6233ea643b7edb5335d7a7
+
