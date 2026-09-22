@@ -1,6 +1,6 @@
 import { User, Job, LeaderboardItem, CandidateIntelligencePayload } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL || '/api';
 
 function getAuthHeader(): Record<string, string> {
   const token = localStorage.getItem('token');
